@@ -1,0 +1,579 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.kotak-utama {
+    min-height: 8000px;
+    width: 90%;
+    background-color: lime;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 4px solid greenyellow;
+    box-shadow: 0 0 12px greenyellow;
+    transition: 1.5s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kotak-utama:hover {
+    min-height: 8000px;
+    width: 90%;
+    background-color: lime;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 4px solid yellow;
+    box-shadow: 0 0 15px yellow;
+    transition: 1.5s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar {
+    background-color: limegreen;
+    border-radius: 5px;
+    border: 3px solid yellow;
+    box-shadow: 0 0 12px yellow;
+    padding: 8px;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1.5s;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+}
+
+.navbar:hover {
+    background-color: black;
+    border-radius: 5px;
+    border: 3px solid yellow;
+    box-shadow: 0 0 15px yellow;
+    padding: 8px;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1.5s;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+}
+
+.tombol {
+    padding: 5px 8px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    border: 2px solid greenyellow;
+    box-shadow: 0 0 12px greenyellow;
+    transition: 1.5s;
+}
+
+.tombol:hover {
+    padding: 5px 8px;
+    font-weight: bold;
+    color: black;
+    background-color: lime;
+    border-radius: 5px;
+    border: 2px solid green;
+    box-shadow: 0 0 18px green;
+    transition: 1.5s;
+}
+
+.kotak-cari {
+    height: 30px;
+    width: 100%;
+    font-weight: bold;
+    color: black;
+    background-color: limegreen;
+    box-shadow: 0 0 15px yellow;
+    border: 3px solid yellow;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.kotak-nampung-semua-tag {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    margin-top: 55px;
+}
+
+.kotak-tag {
+    overflow: hidden;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 100px;
+    width: 95%;
+    background-color: green;
+    box-shadow: 0 0 12px black;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.kotak-judul-tag {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 12px;
+    min-height: 10px;
+    width: 95%;
+    text-align: center;
+    background-color: lime;
+    border: 2px solid yellow;
+    box-shadow: 0 0 12px yellow;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+    
+.kotak-judul-tag:hover {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 12px;
+    min-height: 10px;
+    width: 95%;
+    text-align: center;
+    background-color: lime;
+    border: 2px solid gold;
+    box-shadow: 0 0 12px gold;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.kotak-judul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 10px;
+    width: 95%;
+    background-color: green;
+    border: 2px solid yellow;
+    box-shadow: 0 0 12px gold;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.judul-tag {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    transition: 1.5s;
+}
+
+.judul-tag:hover {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+    
+.kotak-isi {
+    overflow: hidden;
+    margin-top: 12px;
+    min-height: 10px;
+    width: 95%;
+    background-color: lime;
+    border: 2px solid yellow;
+    box-shadow: 0 0 12px gold;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+    
+.kotak-isi:hover {
+    overflow: hidden;
+    margin-top: 12px;
+    min-height: 10px;
+    width: 95%;
+    background-color: lime;
+    border: 2px solid gold;
+    box-shadow: 0 0 15px gold;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.isi-judul {
+    color: black;
+    padding: 7px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.kotak-nampung-atribut {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 12px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 12px;
+    min-height: 100px;
+    width: 95%;
+    background-color: lime;
+    border: 2px solid yellow;
+    box-shadow: 0 0 12px yellow;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.kotak-nampung-atribut:hover {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 12px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 12px;
+    min-height: 100px;
+    width: 95%;
+    background-color: lime;
+    border: 2px solid gold;
+    box-shadow: 0 0 15px gold;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.kotak-judul-atribut {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 10px;
+    width: 95%;
+    background-color: green;
+    border: 2px solid yellow;
+    box-shadow: 0 0 12px gold;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.judul-utama-atribut {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    transition: 1.5s;
+}
+
+.judul-utama-atribut:hover {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
+.kotak-semua-atribut {
+    overflow: hidden;
+    display: flex;
+    padding: 15px;
+    gap: 30px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    min-height: 100px;
+    width: 100%;
+    background-color: green;
+    border: 3px solid yellow;
+    border-radius: 5px;
+    box-shadow: 0 0 15px yellow;
+}
+
+.kotak-semua-atribut::-webkit-scrollbar {
+    display: none;
+}
+
+.kotak-atribut {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    min-height: 50px;
+    min-width: 100%;
+    background-color: greenyellow;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px greenyellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 12px;
+    gap: 15px;
+}
+
+.atribut {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 50px;
+    min-width: 95%;
+    background-color: lime;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 0 0 15px lime;
+}
+
+.judul-atribut {
+    margin-top: 0%;
+    width: 100%;
+    padding: 10px;
+    background-color: lime;
+    color: black;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.isi-judul-atribut {
+    margin-top: 1px;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.kotak-nampung-code {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 12px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    min-height: 100px;
+    width: 95%;
+    background-color: lime;
+    border: 2px solid yellow;
+    box-shadow: 0 0 12px yellow;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.kotak-nampung-code:hover {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 12px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    min-height: 100px;
+    width: 95%;
+    background-color: lime;
+    border: 2px solid gold;
+    box-shadow: 0 0 15px gold;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.kotak-judul-code {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 10px;
+    width: 95%;
+    background-color: green;
+    border: 2px solid yellow;
+    box-shadow: 0 0 12px gold;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.judul-code {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    transition: 1.5s;
+}
+
+.judul-code:hover {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
+.kotak-semua-code {
+    overflow: hidden;
+    display: flex;
+    padding: 15px;
+    gap: 30px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    min-height: 100px;
+    width: 100%;
+    background-color: green;
+    border: 3px solid yellow;
+    border-radius: 5px;
+    box-shadow: 0 0 15px yellow;
+}
+
+.kotak-semua-code::-webkit-scrollbar {
+    display: none;
+}
+
+.kotak-code {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    min-height: 50px;
+    min-width: 100%;
+    background-color: greenyellow;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px greenyellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 12px;
+    gap: 15px;
+}
+
+.code {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    min-height: 50px;
+    min-width: 95%;
+    background-color: lime;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 0 0 15px lime;
+}
+
+.tombol-salin-code {
+    text-align: center;
+    margin-top: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: lime;
+    color: black;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    transition: 1.5s;
+}
+
+.tombol-salin-code:hover {
+    text-align: center;
+    margin-top: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    transition: 1.5s;
+}
+
+.isi-code-satu {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    color: black;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.isi-code-dua {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    color: black;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.kotak-footer {
+    overflow: hidden;
+    min-height: 140px;
+    min-width: 100%;
+    background-color: limegreen;
+    box-shadow: 0 0 15px yellow;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+
+.judul-footer1 {
+    overflow: hidden;
+    padding: 3px;
+    word-wrap: break-word;
+    text-align: center;
+    color: black;
+}
+
+.tulisan-footer1 {
+    overflow: hidden;
+    padding: 3px;
+    word-wrap: break-word;
+    text-align: center;
+    color: black;
+}
+
+.tulisan-footer2 {
+    overflow: hidden;
+    padding: 3px;
+    word-wrap: break-word;
+    text-align: center;
+    color: black;
+}
