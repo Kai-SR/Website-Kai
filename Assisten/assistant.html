@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="icon" type="image/jpeg" href="../Kumpulan_Semua_Gambar/gambar_website.jpg">
+    <link rel="stylesheet" href="assistant.css">
+    <script src="assistant.js"></script>
+</head>
+<body>
+    <div class="kotak-paling-utama">
 
+        <div class="navbar">
+            <button class="tombol" onclick="location.href='../index.html'">Home</button>
+            <button class="tombol" onclick="location.href='../Diriku/diriku.html'">Myself</button>
+            <button class="tombol" onclick="location.href='../Halaman_HTML/halaman-tag.html'">HTML</button>
+            <button class="tombol" onclick="location.href='../Project/project.html'">Projects</button>
+            <button class="tombol" onclick="location.href='../People/people.html'">All People</button>
+            <button class="tombol" onclick="location.href='../Achievement/achievement.html'">Achievements</button>
+            <button class="tombol" onclick="location.href='../Register/register.html'">Register</button>
+        </div>
+        
+        <div class="kotak-nampung-semua">
+            
+            <div class="kotak-assistant">
+
+                <!--Kotak perkenalkan diri ke user-->
+                <div class="Kotak-perkenalkan-diri"></div>
+
+                <!--Kotak hasil jawaban dari input user-->
+                <div class="kotak-hasil-input">
+                    
+                    <div class="kotak-nampung-jawaban-dari-input-user">
+                      
+                      <div class="kotak-jawaban" id="kotak_jawaban1">
+                          Is there anything i can help you with?
+                        </div>
+                        
+                        <div class="kotak-jawaban" id="kotak_jawaban2"></div>
+                        
+                    </div>
+
+                </div>
+
+                <!--Kotak user input perintah-->
+                <div class="kotak-pilihan">
+                    
+                    <div class="kotak-scroll-tombol-pertanyaan">
+                        <button class="tombol-pertanyaan" onclick="Pertanyaan_1()">Hello, how are you?</button>
+                        <button class="tombol-pertanyaan" onclick="Pertanyaan_2()">Who are you really?</button>
+                        <button class="tombol-pertanyaan" onclick="Pertanyaan_3()">What name can i call you?</button>
+                        <button class="tombol-pertanyaan" onclick="Pertanyaan_4()">What can you do for me?</button>
+                        <button class="tombol-pertanyaan" onclick="Pertanyaan_5()">Can you do something like provide coding code?</button>
+                    </div>
+
+                    <div class="kotak-user-input">
+                        
+                        <div class="kotak-nampung-input">
+                            <input class="user-input" id="user-input-pesan" onclick="User_Input()" type="text" placeholder="Please ask...">
+                            <button class="tombol-kirim" id="tombol-kirim-pesan" onclick="Tombol_Cari()">Send</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="kotak-footer">
+                <h3 class="judul-footer1">Need Help?</h3>
+                <p class="tulisan-footer1">We created this website with all our heart ☺️</p>
+                <p class="tulisan-footer2">Copyright © 2026</p>
+            </div>
+
+        </div>
+
+    </div>
